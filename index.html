@@ -32,7 +32,7 @@
             <span class="input-group-text">Commission</span>
             <input type="number" id="commission" aria-label="Last name" name="commission" value=25 class="form-control">
             <span class="input-group-text">Total</span>
-            <input type="number" id="total" aria-label="Last name" name="total" value=0 class="form-control">
+            <input type="number" id="total" aria-label="Last name" name="total" value=0 class="form-control" disabled>
         </div>
         <br>
         <div class="input-group">
@@ -84,6 +84,17 @@
             <span class="input-group-text">Window</span>
             <input type="number" onchange="validateInput()" name="window" value=0 class="form-control">
             <input type="number" aria-label="Last name" name="windowC" value=0 class="form-control">
+        </div>
+        <div class="input-group">
+            <span class="input-group-text">Upgrades</span>
+            <input type="text" id="upgrades" name="window" value="" class="form-control" disabled>
+        </div>
+        <br>
+        <div>
+            <textarea class="form-control" placeholder="Enter MEOS value" id="meosString" onchange="submitMEOS()"></textarea>
+            <br>
+            <textarea class="form-control" placeholder="Mechanic Log will generate here" id="mechanicLog"></textarea>
+            <!-- <label for="floatingTextarea">Generated Log</label> -->
         </div>
       </div>
 
