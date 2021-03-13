@@ -32,7 +32,7 @@
             <span class="input-group-text">Commission</span>
             <input type="number" id="commission" aria-label="Last name" name="commission" value=25 class="form-control">
             <span class="input-group-text">Total</span>
-            <input type="number" id="total" aria-label="Last name" name="total" value=0 class="form-control" disabled>
+            <input type="number" id="total" aria-label="Last name" name="total" class="form-control" disabled>
         </div>
         <br>
         <div class="input-group">
@@ -42,58 +42,63 @@
         </div>
         <div class="input-group">
             <span class="input-group-text">Transmission</span>
-            <input type="number" onchange="validateInput()" placeholder="Normal Price" name="transmission" value=0 class="form-control">
-            <input type="number" placeholder="Price with Commission" disabled name="transmissionC" value=0 class="form-control">
+            <input type="number" onchange="validateInput()" placeholder="Normal Price" name="transmission" class="form-control">
+            <input type="number" placeholder="Price with Commission" disabled name="transmissionC" class="form-control">
         </div>
         <div class="input-group">
             <span class="input-group-text">Horn</span>
-            <input type="number" onchange="validateInput()" placeholder="Normal Price" name="horn" value=0 class="form-control">
-            <input type="number" placeholder="Price with Commission" disabled name="hornC" value=0 class="form-control">
+            <input type="number" onchange="validateInput()" placeholder="Normal Price" name="horn" class="form-control">
+            <input type="number" placeholder="Price with Commission" disabled name="hornC" class="form-control">
         </div>
         <div class="input-group">
             <span class="input-group-text">Armor</span>
-            <input type="number" onchange="validateInput()" placeholder="Normal Price" name="armor" value=0 class="form-control">
-            <input type="number" placeholder="Price with Commission" disabled name="armorC" value=0 class="form-control">
+            <input type="number" onchange="validateInput()" placeholder="Normal Price" name="armor" class="form-control">
+            <input type="number" placeholder="Price with Commission" disabled name="armorC" class="form-control">
         </div>
         <div class="input-group">
             <span class="input-group-text">Turbo</span>
-            <input type="number" onchange="validateInput()" placeholder="Normal Price" name="turbo" value=0 class="form-control">
-            <input type="number" placeholder="Price with Commission" disabled name="turboC" value=0 class="form-control">
+            <input type="number" onchange="validateInput()" placeholder="Normal Price" name="turbo" class="form-control">
+            <input type="number" placeholder="Price with Commission" disabled name="turboC" class="form-control">
         </div>
         <div class="input-group">
             <span class="input-group-text">Engine</span>
-            <input type="number" onchange="validateInput()" placeholder="Normal Price" name="engine" value=0 class="form-control">
-            <input type="number" placeholder="Price with Commission" disabled name="engineC" value=0 class="form-control">
+            <input type="number" onchange="validateInput()" placeholder="Normal Price" name="engine" class="form-control">
+            <input type="number" placeholder="Price with Commission" disabled name="engineC" class="form-control">
         </div>
         <div class="input-group">
             <span class="input-group-text">Plate</span>
-            <input type="number" onchange="validateInput()" placeholder="Normal Price" name="plate" value=0 class="form-control">
-            <input type="number" placeholder="Price with Commission" disabled name="plateC" value=0 class="form-control">
+            <input type="number" onchange="validateInput()" placeholder="Normal Price" name="plate" class="form-control">
+            <input type="number" placeholder="Price with Commission" disabled name="plateC" class="form-control">
         </div>
         <div class="input-group">
             <span class="input-group-text">Respray</span>
-            <input type="number" onchange="validateInput()" placeholder="Normal Price" name="respray" value=0 class="form-control">
-            <input type="number" placeholder="Price with Commission" disabled name="resprayC" value=0 class="form-control">
+            <input type="number" onchange="validateInput()" placeholder="Normal Price" name="respray" class="form-control">
+            <input type="number" placeholder="Price with Commission" disabled name="resprayC" class="form-control">
         </div>
         <div class="input-group">
             <span class="input-group-text">Wheels</span>
-            <input type="number" onchange="validateInput()" placeholder="Normal Price" name="wheel" value=0 class="form-control">
-            <input type="number" placeholder="Price with Commission" disabled name="wheelC" value=0 class="form-control">
+            <input type="number" onchange="validateInput()" placeholder="Normal Price" name="wheel" class="form-control">
+            <input type="number" placeholder="Price with Commission" disabled name="wheelC" class="form-control">
         </div>
         <div class="input-group">
             <span class="input-group-text">Window</span>
-            <input type="number" onchange="validateInput()" placeholder="Normal Price" name="window" value=0 class="form-control">
-            <input type="number" placeholder="Price with Commission" disabled name="windowC" value=0 class="form-control">
+            <input type="number" onchange="validateInput()" placeholder="Normal Price" name="window" class="form-control">
+            <input type="number" placeholder="Price with Commission" disabled name="windowC" class="form-control">
         </div>
+        <br>
         <div class="input-group">
             <span class="input-group-text">Upgrades</span>
             <input type="text" id="upgrades" name="window" value="" class="form-control" disabled>
         </div>
         <br>
         <div>
-            <textarea class="form-control" placeholder="Enter MEOS value" id="meosString" onchange="submitMEOS()"></textarea>
+            <textarea class="form-control" placeholder="Enter MEOS value from phone eg. 
+            Kenteken: ACBV6917
+ 
+            Eigenaar: Henkie Krikhaar" id="meosString" onchange="submitMEOS()" rows="4"></textarea>
             <br>
-            <textarea class="form-control" placeholder="Mechanic Log will generate here" id="mechanicLog"></textarea>
+            <textarea class="form-control" placeholder="Mechanic Log will generate here" id="mechanicLog" rows="5"></textarea>
+            <br>
             <button type="button" onclick="copyToClipboard()" class="btn btn-secondary">Copy Mechanic Log</button>
         </div>
       </div>
