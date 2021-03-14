@@ -26,11 +26,16 @@ function submitMEOS(){
     console.log(meos);
     let arr = meos.split("\n");
     console.log(arr);
+    let total = parseInt(document.getElementById("total").value);
+    let commission = parseInt(document.getElementById("commission").value);
+    let profit = (total*commission)/(100+commission);
+
+    // generate mechanic log
     var result ="Name =" + arr[2].split(":")[1] +"\n";
     result += "Gadi no. =" + arr[0].split(":")[1]+"\n";
     result += "Upgrades =" + document.getElementById("upgrades").value+"\n";
-    result += "Total Costing=" + document.getElementById("total").value+"\n";
-    result += "My Cut ="+ parseInt(document.getElementById("total").value)*100/(100+parseInt(document.getElementById("commission").value));
+    result += "Total Costing=" + total+"\n";
+    result += "My Cut ="+ profit;
     console.log(result);
     document.getElementById("mechanicLog").value = result;
 }
